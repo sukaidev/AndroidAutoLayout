@@ -2,12 +2,12 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.1"
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
     }
@@ -18,8 +18,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -39,7 +39,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.sukaidev.autolayout'
                 artifactId = 'autolayout'
-                version = '1.0.1'
+                version = '1.0.2'
             }
             // Creates a Maven publication called “debug”.
             snapshot(MavenPublication){
@@ -48,7 +48,7 @@ afterEvaluate {
 
                 groupId = 'com.sukaidev.autolayout'
                 artifactId = 'autolayout'
-                version = '1.0.1-SNAPSHOT'
+                version = '1.0.2-SNAPSHOT'
             }
         }
     }
